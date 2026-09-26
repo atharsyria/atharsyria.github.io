@@ -3,7 +3,7 @@ const artistGrid = document.getElementById("artistGrid");
 const artists = [
   {
     name: "عبادة العبود",
-    type: "ممثل أكاديمي ومذيع",
+    type: "ممثل أكاديمي",
 
     bio: "خريج الجامعة العربية الدولية – كلية الفنون، قسم التمثيل والإخراج السينمائي، دفعة 2025.",
 
@@ -44,7 +44,10 @@ function showArtists(filter = "all") {
     <article class="artist">
 
       <div class="portrait">
-        <img src="IMG20240626114749.jpg" alt="عبادة العبود">
+        <img
+          src="IMG20240626114749.jpg"
+          alt="عبادة العبود"
+        >
       </div>
 
       <div class="artist-info">
@@ -62,18 +65,75 @@ function showArtists(filter = "all") {
         <div class="gallery">
 
           <img
-            src="Screenshot_٢٠٢٦٠٩٢٧_٠٠٤٨٥٤_Instagram.jpg"
+            src="IMG20240626114749.jpg"
             alt="عبادة العبود"
+            loading="lazy"
           >
 
           <img
             src="IMG-20260705-WA0309.jpg"
             alt="عبادة العبود"
+            loading="lazy"
           >
 
           <img
-            src="IMG-20260703-WA0018.jpg"
+            src="IMG-20260703-WA0090.jpg"
             alt="عبادة العبود"
+            loading="lazy"
+          >
+
+          <img
+            src="Screenshot_٢٠٢٦٠٦٢٨_١٢٥٠٥٦_Instagram.jpg"
+            alt="عبادة العبود"
+            loading="lazy"
+          >
+
+          <img
+            src="IMG_20260405_145630_249.jpg"
+            alt="عبادة العبود"
+            loading="lazy"
+          >
+
+          <img
+            src="IMG_20260405_150222_107.jpg"
+            alt="عبادة العبود"
+            loading="lazy"
+          >
+
+          <img
+            src="IMG_20260405_145555_061.jpg"
+            alt="عبادة العبود"
+            loading="lazy"
+          >
+
+          <img
+            src="IMG_20260405_145610_598.jpg"
+            alt="عبادة العبود"
+            loading="lazy"
+          >
+
+          <img
+            src="IMG_20260405_145604_097.jpg"
+            alt="عبادة العبود"
+            loading="lazy"
+          >
+
+          <img
+            src="IMG_20260405_145625_402.jpg"
+            alt="عبادة العبود"
+            loading="lazy"
+          >
+
+          <img
+            src="IMG_20260405_145514_833.jpg"
+            alt="عبادة العبود"
+            loading="lazy"
+          >
+
+          <img
+            src="IMG-20260403-WA0094.jpg"
+            alt="عبادة العبود"
+            loading="lazy"
           >
 
         </div>
@@ -136,3 +196,5 @@ articleGrid.innerHTML = articles.map(article => `
 
   </article>
 `).join("");
+
+
