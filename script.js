@@ -54,7 +54,9 @@ function showArtists(filter = "all") {
 
         <p class="eyebrow">${artist.type}</p>
 
-        <h3>${artist.name}</h3>
+        <h3>
+          <a href="obada-alabboud.html">${artist.name}</a>
+        </h3>
 
         <p>${artist.bio}</p>
 
@@ -196,5 +198,3 @@ articleGrid.innerHTML = articles.map(article => `
 
   </article>
 `).join("");
-
-
