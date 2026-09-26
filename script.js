@@ -2,10 +2,35 @@ const artistGrid = document.getElementById("artistGrid");
 
 const artists = [
   {
-    name: "عباده العبود",
-    type: "تمثيل",
-    bio: "ممثل خريج الجامعة العربية الدولية – كلية الفنون، قسم التمثيل والإخراج السينمائي، دفعة 2025.",
-    works: "الاغتصاب، عطيل، صاحبة اللوكاندا، اليوم السابع."
+    name: "عبادة العبود",
+    type: "ممثل أكاديمي ومذيع",
+
+    bio: "خريج الجامعة العربية الدولية – كلية الفنون، قسم التمثيل والإخراج السينمائي، دفعة 2025.",
+
+    works: `
+      <strong>الأعمال المسرحية</strong><br><br>
+
+      الاغتصاب — الدور: الأب مائير — إشراف: نسرين فندي<br>
+      عطيل — الدور: عطيل — إشراف: عجاج سليم<br>
+      صاحبة اللوكاندا — الدور: الفارس — إشراف: رباب كنعان<br>
+      اليوم السابع — الدور: البروفيسور إكس — إشراف: كفاح الخوص
+
+      <br><br>
+
+      <strong>الأفلام السينمائية</strong><br><br>
+
+      لعنة التفكير — المخرج: جان الدريعي<br>
+      وطن بلا فيتو — المخرج: أيهم الضبع<br>
+      الفلاح — المخرج: أيهم الضبع<br>
+      صاحب الصورة — المخرج: رنا كراد
+
+      <br><br>
+
+      <strong>المهارات</strong><br><br>
+
+      التمثيل المسرحي · التمثيل أمام الكاميرا · التقديم والإلقاء ·
+      الأداء الصوتي · التعبير الجسدي · العمل الجماعي
+    `
   }
 ];
 
@@ -21,9 +46,14 @@ function showArtists(filter = "all") {
 
       <div class="artist-info">
         <p class="eyebrow">${artist.type}</p>
+
         <h3>${artist.name}</h3>
+
         <p>${artist.bio}</p>
-        <p>من أعماله: ${artist.works}</p>
+
+        <div class="works">
+          ${artist.works}
+        </div>
       </div>
     </article>
   `).join("");
@@ -36,6 +66,7 @@ const filters = document.querySelectorAll(".filter");
 filters.forEach(button => {
   button.addEventListener("click", () => {
     filters.forEach(btn => btn.classList.remove("active"));
+
     button.classList.add("active");
 
     showArtists(button.dataset.filter);
@@ -69,11 +100,11 @@ const articles = [
 articleGrid.innerHTML = articles.map(article => `
   <article class="article">
     <span class="tag">${article.tag}</span>
+
     <h3>${article.title}</h3>
+
     <p>${article.text}</p>
+
     <span class="date">${article.date}</span>
   </article>
 `).join("");
-
-
-
