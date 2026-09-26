@@ -3,107 +3,380 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+
 <title>أثر سوري — ذاكرة الفن السوري</title>
-<meta name="description" content="منصة ثقافية توثق الفنانين السوريين وأعمالهم وحواراتهم وقصصهم.">
+
+<meta name="description" content="أثر سوري — منصة ثقافية توثق الفنانين السوريين وأعمالهم وحواراتهم وكتاباتهم.">
+
 <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
 <header class="topbar">
-  <a class="brand" href="#"><span>أثر</span> سوري</a>
+
+  <a class="brand" href="#">
+    <span>أثر</span> سوري
+  </a>
+
   <button class="menu" aria-label="القائمة">☰</button>
+
   <nav>
     <a href="#artists">الفنانون</a>
     <a href="#articles">الكتابات</a>
     <a href="#interviews">حوارات</a>
     <a href="#about">عن الموقع</a>
   </nav>
+
 </header>
 
+
 <main>
+
+<!-- الواجهة الرئيسية -->
+
 <section class="hero">
+
   <div class="hero-copy">
+
     <p class="eyebrow">منصة ثقافية سورية</p>
-    <h1>نكتب عن الفنان السوري<br><em>كي تبقى الحكاية.</em></h1>
-    <p class="lead">مساحة للوجوه والأصوات والحكايات التي صنعت جزءًا من ذاكرة الفن السوري.</p>
+
+    <h1>
+      نكتب عن الفنان السوري
+      <br>
+      <em>كي تبقى الحكاية.</em>
+    </h1>
+
+    <p class="lead">
+      مساحة توثق الوجوه والأصوات والأعمال التي صنعت جزءًا من ذاكرة الفن السوري.
+    </p>
+
     <div class="hero-actions">
-      <a class="btn primary" href="#artists">اكتشف الفنانين</a>
-      <a class="btn ghost" href="#articles">اقرأ الكتابات</a>
+
+      <a class="btn primary" href="#artists">
+        اكتشف الفنانين
+      </a>
+
+      <a class="btn ghost" href="#articles">
+        اقرأ الكتابات
+      </a>
+
     </div>
+
   </div>
+
+
   <div class="hero-card">
-    <div class="quote">«الفن ليس صورةً للحياة فقط، بل ذاكرةٌ لما كنا عليه.»</div>
+
+    <div class="quote">
+      «الفن ليس صورةً للحياة فقط، بل ذاكرةٌ لما كنا عليه.»
+    </div>
+
     <div class="line"></div>
-    <small>أثر سوري · ملف الأسبوع</small>
+
+    <small>
+      أثر سوري · ملف الأسبوع
+    </small>
+
   </div>
+
 </section>
+
+
+
+<!-- الفنانون -->
 
 <section class="section" id="artists">
+
   <div class="section-head">
-    <div><p class="eyebrow">وجوه سورية</p><h2>الفنانون</h2></div>
-    <a href="#" class="more">عرض الكل ←</a>
+
+    <div>
+      <p class="eyebrow">وجوه سورية</p>
+      <h2>الفنانون</h2>
+    </div>
+
+    <a href="#artists" class="more">
+      عرض الكل ←
+    </a>
+
   </div>
+
+
   <div class="filters">
-    <button class="filter active" data-filter="all">الكل</button>
-    <button class="filter" data-filter="تمثيل">تمثيل</button>
-    <button class="filter" data-filter="إخراج">إخراج</button>
-    <button class="filter" data-filter="موسيقى">موسيقى</button>
-    <button class="filter" data-filter="كتابة">كتابة</button>
+
+    <button class="filter active" data-filter="all">
+      الكل
+    </button>
+
+    <button class="filter" data-filter="تمثيل">
+      تمثيل
+    </button>
+
+    <button class="filter" data-filter="إخراج">
+      إخراج
+    </button>
+
+    <button class="filter" data-filter="موسيقى">
+      موسيقى
+    </button>
+
+    <button class="filter" data-filter="كتابة">
+      كتابة
+    </button>
+
   </div>
-  <div class="artist-grid" id="artistGrid"></div>
+
+
+  <div class="artist-grid" id="artistGrid">
+
+    <!-- سيتم إضافة الفنانين بواسطة script.js -->
+
+  </div>
+
 </section>
+
+
+
+<!-- الملف الخاص -->
 
 <section class="feature">
+
   <div class="feature-text">
-    <p class="eyebrow">ملف خاص</p>
-    <h2>الفنان السوري<br>بين المسرح والشاشة</h2>
-    <p>قراءة في رحلة الفنان السوري من خشبة المسرح إلى الدراما والسينما، وما الذي يبقى من التجربة حين ينتهي العرض.</p>
-    <a class="btn primary" href="#articles">اقرأ الملف</a>
+
+    <p class="eyebrow">
+      ملف خاص
+    </p>
+
+    <h2>
+      الفنان السوري
+      <br>
+      بين المسرح والشاشة
+    </h2>
+
+    <p>
+      قراءة في رحلة الفنان السوري من خشبة المسرح إلى الدراما والسينما،
+      وما الذي يبقى من التجربة حين ينتهي العرض.
+    </p>
+
+    <a class="btn primary" href="#articles">
+      اقرأ الملف
+    </a>
+
   </div>
-  <div class="feature-mark">أثر<br><span>سوري</span></div>
+
+
+  <div class="feature-mark">
+    أثر
+    <br>
+    <span>سوري</span>
+  </div>
+
 </section>
+
+
+
+<!-- المقالات -->
 
 <section class="section" id="articles">
+
   <div class="section-head">
-    <div><p class="eyebrow">من دفاترنا</p><h2>أحدث الكتابات</h2></div>
+
+    <div>
+      <p class="eyebrow">
+        من دفاترنا
+      </p>
+
+      <h2>
+        أحدث الكتابات
+      </h2>
+    </div>
+
   </div>
-  <div class="article-grid" id="articleGrid"></div>
+
+
+  <div class="article-grid" id="articleGrid">
+
+    <!-- سيتم إضافة المقالات بواسطة script.js -->
+
+  </div>
+
 </section>
+
+
+
+<!-- الحوارات -->
 
 <section class="section interviews" id="interviews">
+
   <div class="section-head">
-    <div><p class="eyebrow">صوت الفنان</p><h2>حوارات</h2></div>
+
+    <div>
+
+      <p class="eyebrow">
+        صوت الفنان
+      </p>
+
+      <h2>
+        حوارات
+      </h2>
+
+    </div>
+
   </div>
+
+
   <div class="interview">
-    <div class="interview-number">01</div>
-    <div><p class="eyebrow">حوار</p><h3>«لم أبحث عن الشهرة، كنت أبحث عن الدور الذي يشبهني»</h3><p>حوارات طويلة مع فنانين سوريين حول المهنة، الخوف، البدايات، وما بعد الشهرة.</p></div>
-    <span class="arrow">←</span>
+
+    <div class="interview-number">
+      01
+    </div>
+
+    <div>
+
+      <p class="eyebrow">
+        حوار
+      </p>
+
+      <h3>
+        «لم أبحث عن الشهرة، كنت أبحث عن الدور الذي يشبهني»
+      </h3>
+
+      <p>
+        حوارات طويلة مع فنانين سوريين حول المهنة،
+        البدايات، الخوف، والتجربة الفنية.
+      </p>
+
+    </div>
+
+    <span class="arrow">
+      ←
+    </span>
+
   </div>
+
+
+
   <div class="interview">
-    <div class="interview-number">02</div>
-    <div><p class="eyebrow">من الكواليس</p><h3>كيف يولد العمل الفني قبل أن يصل إلى الجمهور؟</h3><p>قصص من المسرح والاستديو والكواليس، يرويها أصحابها.</p></div>
-    <span class="arrow">←</span>
+
+    <div class="interview-number">
+      02
+    </div>
+
+    <div>
+
+      <p class="eyebrow">
+        من الكواليس
+      </p>
+
+      <h3>
+        كيف يولد العمل الفني قبل أن يصل إلى الجمهور؟
+      </h3>
+
+      <p>
+        قصص من المسرح والاستديو والكواليس،
+        يرويها أصحابها.
+      </p>
+
+    </div>
+
+    <span class="arrow">
+      ←
+    </span>
+
   </div>
+
 </section>
+
+
+
+<!-- النشرة -->
 
 <section class="newsletter">
-  <p class="eyebrow">النشرة الثقافية</p>
-  <h2>كل ما يهم الفن السوري، في مكان واحد.</h2>
-  <p>اشترك لتصلك أحدث الملفات والحوارات والكتابات.</p>
+
+  <p class="eyebrow">
+    النشرة الثقافية
+  </p>
+
+  <h2>
+    كل ما يهم الفن السوري، في مكان واحد.
+  </h2>
+
+  <p>
+    اشترك لتصلك أحدث الملفات والحوارات والكتابات.
+  </p>
+
+
   <form onsubmit="event.preventDefault(); alert('تم تسجيل اشتراكك — هذه نسخة تجريبية من الموقع.');">
-    <input type="email" placeholder="بريدك الإلكتروني" required>
-    <button class="btn primary">اشترك</button>
+
+    <input
+      type="email"
+      placeholder="بريدك الإلكتروني"
+      required
+    >
+
+    <button class="btn primary">
+      اشترك
+    </button>
+
   </form>
+
 </section>
+
+
+
+<!-- عن الموقع -->
 
 <section class="about" id="about">
-  <div><p class="eyebrow">عن أثر سوري</p><h2>مشروع يوثق الفنان،<br>لا الخبر فقط.</h2></div>
-  <p>«أثر سوري» نموذج أولي لمنصة مستقلة تهتم بالفنانين السوريين وسيرهم وأعمالهم وحكاياتهم. الهدف هو بناء أرشيف ثقافي حي، يجمع المقالة والحوار والملف التعريفي في مكان واحد.</p>
+
+  <div>
+
+    <p class="eyebrow">
+      عن أثر سوري
+    </p>
+
+    <h2>
+      مشروع يوثق الفنان،
+      <br>
+      لا الخبر فقط.
+    </h2>
+
+  </div>
+
+
+  <p>
+
+    «أثر سوري» منصة ثقافية مستقلة تهتم بالفنانين السوريين
+    وسيرهم وأعمالهم وحكاياتهم.
+
+    <br><br>
+
+    نهدف إلى بناء أرشيف ثقافي حي يجمع الفنانين،
+    المقالات، الحوارات، والصور في مكان واحد.
+
+  </p>
+
 </section>
+
 </main>
 
+
+
 <footer>
-  <strong>أثر سوري</strong><span>© 2026 · منصة ثقافية مستقلة</span>
+
+  <strong>
+    أثر سوري
+  </strong>
+
+  <span>
+    © 2026 · منصة ثقافية مستقلة
+  </span>
+
 </footer>
+
+
 <script src="script.js"></script>
+
 </body>
 </html>
+
+
