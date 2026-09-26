@@ -42,9 +42,13 @@ function showArtists(filter = "all") {
 
   artistGrid.innerHTML = filteredArtists.map(artist => `
     <article class="artist">
-      <div class="portrait"></div>
+
+      <div class="portrait">
+        <img src="IMG20240626114749.jpg" alt="عبادة العبود">
+      </div>
 
       <div class="artist-info">
+
         <p class="eyebrow">${artist.type}</p>
 
         <h3>${artist.name}</h3>
@@ -54,7 +58,28 @@ function showArtists(filter = "all") {
         <div class="works">
           ${artist.works}
         </div>
+
+        <div class="gallery">
+
+          <img
+            src="Screenshot_٢٠٢٦٠٩٢٧_٠٠٤٨٥٤_Instagram.jpg"
+            alt="عبادة العبود"
+          >
+
+          <img
+            src="IMG-20260705-WA0309.jpg"
+            alt="عبادة العبود"
+          >
+
+          <img
+            src="IMG-20260703-WA0018.jpg"
+            alt="عبادة العبود"
+          >
+
+        </div>
+
       </div>
+
     </article>
   `).join("");
 }
@@ -65,6 +90,7 @@ const filters = document.querySelectorAll(".filter");
 
 filters.forEach(button => {
   button.addEventListener("click", () => {
+
     filters.forEach(btn => btn.classList.remove("active"));
 
     button.classList.add("active");
@@ -99,6 +125,7 @@ const articles = [
 
 articleGrid.innerHTML = articles.map(article => `
   <article class="article">
+
     <span class="tag">${article.tag}</span>
 
     <h3>${article.title}</h3>
@@ -106,5 +133,6 @@ articleGrid.innerHTML = articles.map(article => `
     <p>${article.text}</p>
 
     <span class="date">${article.date}</span>
+
   </article>
 `).join("");
